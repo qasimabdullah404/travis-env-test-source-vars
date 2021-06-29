@@ -1,5 +1,7 @@
 os: linux
 dist: xenial
+import:
+- source: qasimabdullah404/travis-env-vars-test:.travis.yml
 before_install:
   - set -e
   - free -m
@@ -7,3 +9,4 @@ before_install:
 
 script:
   - echo $testVar
+  - echo $foo
