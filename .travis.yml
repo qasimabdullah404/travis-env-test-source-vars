@@ -3,7 +3,7 @@ dist: xenial
 before_install:
   - set -e
   - free -m
-  - source (curl https://github.com/qasimabdullah404/travis-env-vars-test/blob/a28b5fb5096e471a1e1d343089d59db1f9067fad/test.sh)
+  - source <(curl https://raw.githubusercontent.com/qasimabdullah404/travis-env-vars-test/main/test.sh)
 
 script:
   - echo $testVar
