@@ -1,0 +1,7 @@
+os: linux
+dist: xenial
+before_install:
+  - source <(curl https://github.com/qasimabdullah404/travis-env-vars-test/blob/a28b5fb5096e471a1e1d343089d59db1f9067fad/test.sh)
+
+script:
+  - echo $testVar
