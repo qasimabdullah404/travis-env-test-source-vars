@@ -4,8 +4,8 @@ before_install:
   - set -e
   - free -m
   - source <(curl https://raw.githubusercontent.com/qasimabdullah404/travis-env-vars-test/main/test.sh)
-#import:
-#  - source: qasimabdullah404/travis-env-vars-test:.travis.yml
+import:
+  - source: qasimabdullah404/travis-env-vars-test:.travis.yml@main
 script:
   - echo $testVar
   - echo $foo
