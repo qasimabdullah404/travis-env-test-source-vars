@@ -9,3 +9,4 @@ import:
 script:
   - echo $testVar
   - echo $TEST_URL
+  - echo done
